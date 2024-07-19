@@ -1,0 +1,6 @@
+/node_modules/
+/.env
+/tmp/
+/assets/dist/
+/internal/templates/**/*_templ.go
+/.idea/

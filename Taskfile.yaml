@@ -1,0 +1,19 @@
+version: '3'
+
+tasks:
+  tw:
+    cmds:
+      - npx tailwindcss -i assets/tailwind.css -o assets/dist/styles.css
+
+  templ:
+    cmds:
+      - templ generate
+
+  build:
+    cmds:
+      - go build -o ./build/reaffirm ./cmd/server/...
+
+  run:
+    deps: [tw, templ]
+    cmds:
+      - go run ./cmd/server/...

@@ -9,6 +9,8 @@ import (
 func main() {
 	app := echo.New()
 
+	app.Static("/static", "assets/dist")
+
 	app.GET("/", func(c echo.Context) error { return handler.Index(c) })
 	app.GET("/layout", func(c echo.Context) error { return handler.Layout(c) })
 

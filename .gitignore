@@ -2,5 +2,5 @@
 /.env
 /tmp/
 /assets/dist/
-/internal/templates/**/*_templ.go
+/internal/templ/**/*_templ.go
 /.idea/

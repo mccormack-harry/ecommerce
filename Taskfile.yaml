@@ -3,7 +3,7 @@ version: '3'
 tasks:
   tw:
     cmds:
-      - npx tailwindcss -i assets/tailwind.css -o assets/dist/styles.css
+      - npx tailwindcss -i assets/global.css -o assets/dist/styles.css
 
   templ:
     cmds:
